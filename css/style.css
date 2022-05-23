@@ -1,0 +1,363 @@
+/* website css */
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.pageheading{
+    text-align: center;
+    color: red;
+    margin: 30px 0 30px 0 ;
+    text-shadow: 2px 3px cyan;
+}
+
+.pageheading:hover{
+    color: white;
+    text-shadow: 2px -3px  cyan, -3px 2px  red;
+}
+
+/* page 1 css */
+.page1{
+    background-color: #10105e;
+    height: 99vh;
+    width: 99.5vw;
+    border: 3px solid red;
+    outline: 3px solid cyan;
+    box-sizing: border-box;
+    margin: 3px;
+
+}
+
+.left-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-box img{
+    height: auto;
+    width: 35vw;
+}
+
+.right-box{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.p1h{
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+@media  (max-width:500px) {
+    .p1h{
+        font-size: 2rem;
+        margin-left: 1%;
+    }
+    .left-box img{
+        width: 80vw;
+        margin-bottom: 10vh;
+        margin-left: 3%;
+    }
+}
+
+.fl{
+    color: red;
+    text-shadow: 2px 3px  cyan;
+    margin-right: 3px;
+}
+
+#f1:hover{
+    color: cyan;
+    text-shadow: 4px 4px red;
+    transform: rotateZ(20deg);
+    transition: all 0.3s ease-in-out;
+}
+
+#f2:hover{
+    color: cyan;
+    text-shadow: 4px 4px red;
+    transform: rotateZ(20deg);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width:1900px) {
+    .page1{
+        height: 100%;
+    }
+    
+}
+
+/* page 2 css */
+.page2{
+    background-color: #10105e;
+    height: 99vh;
+    width: 100vw;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    
+}
+
+.aboutspan{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.myname{
+    text-shadow: 2px -2px 2px cyan, -2px 2px 2px red;
+    padding: 0 10px 0 10px;
+}
+
+.myname:hover{
+    background-color: black;
+    color: red;
+    text-shadow: 2px 2px cyan;
+    cursor: pointer;
+}
+
+
+
+
+/* page 3 css */
+
+.page3{
+    background-color: #10105e;
+    height: 100%;
+    width: 99.5vw;
+    border: 3px solid cyan;
+    outline: 3px solid red;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+.mycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vw 0 0 ;
+}
+
+.mpanel{
+    height: 80vh;
+    flex: 0.3;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+@media(max-width:800px){
+    .mycontainer{
+        flex-direction: column;
+    }
+
+    .mpanel:nth-of-type(4),.mpanel:nth-of-type(5){
+        display: none;
+    }
+
+    .mpanel img{
+        height: 20vh;
+        width: 90vw;
+    }
+    
+    .mpanel.mactive{
+        height: 80vh;
+        /* flex: 1.5;
+        transition: flex 2s ease-in; */
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    .mpanel.mactive{
+        height: 30vh;
+        flex: 1.5;
+        transition: flex 2s ease-in;
+    }
+}
+
+.mpanel h2{
+    visibility: hidden;
+}
+
+.mpanel.mactive{
+    height: 80vh;
+    flex: 1.5;
+    transition: flex 1s ease-in;
+}
+
+
+.mpanel.mactive h2{
+    visibility: visible;
+    /* opacity: 1; */
+    transition: opacity 0.8s ease-in;
+    
+}
+
+.mpanel.mactive img{
+    height: 80vh;
+    width: 100%;
+}
+
+.img{
+    position: relative;
+}
+
+.il{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mpanel a{
+    color: red;
+    text-decoration: none;
+    background-color: cyan;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* page 4 css */
+.page4{
+    background-color: #10105e;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page4heading{
+    text-align: center;
+    color: red;
+    margin: 30px 0 30px 0 ;
+    text-shadow: 2px 3px cyan;
+    overflow: hidden;
+}
+
+.page4heading:hover{
+    color: white;
+    text-shadow: 2px -3px  cyan, -3px 2px  red;
+}
+
+.page4 div{
+    margin: 8vh 0;
+}
+
+.logo{
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:800px) {
+    .logo{
+        height: 150px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .logo{
+        height: 120px;
+        width: 120px;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width:2000px) {
+    .logo{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+/* form page css */
+.formPage{
+    background-color: #10105e;
+    height: 99vh;
+    width: 99.5vw;
+    border: 3px solid cyan;
+    outline: 3px solid red;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.inp-form{
+    height:8vh;
+    width: 50vw;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.inp-form:focus{
+    outline: none;
+}
+
+.btnalgn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-btn{
+    height: 35px;
+    width: 90px;
+    margin: 30px 0;
+    border-radius: 40px;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid cyan;
+    border-left: 2px solid cyan;
+}
+
+#sub-btn:hover{
+    box-shadow: 5px -5px red, -5px 5px cyan;
+    transition: box-shadow .3s linear ;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    visibility: hidden;
+}
